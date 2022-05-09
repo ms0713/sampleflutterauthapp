@@ -35,9 +35,9 @@ class _MyAppState extends State<MyApp> {
   final String _clientId = 'flutter-demo-app';
   final String _redirectUrl = 'com.example.sampleflutterauthapp:/*';
   //final String _redirectUrl = 'com.example.sampleflutterauthapp://logincallback';
-  final String _issuer = 'https://192.168.1.8:8443/realms/flutter';
+  final String _issuer = 'https://10.0.2.2:8443/realms/flutter';
   final String _discoveryUrl =
-      'https://192.168.1.8:8443/realms/flutter/.well-known/openid-configuration';
+      'https://10.0.2.2:8443/realms/flutter/.well-known/openid-configuration';
   final String _postLogoutRedirectUrl = 'com.example.sampleflutterauthapp://';
   final List<String> _scopes = <String>[
     'openid',
@@ -47,9 +47,9 @@ class _MyAppState extends State<MyApp> {
 
   final AuthorizationServiceConfiguration _serviceConfiguration =
       const AuthorizationServiceConfiguration(
-    authorizationEndpoint: 'https://192.168.1.8:8443/realms/flutter/protocol/openid-connect/auth',
-    tokenEndpoint: 'https://192.168.1.8:8443/realms/flutter/protocol/openid-connect/token',
-    endSessionEndpoint: 'https://192.168.1.8:8443/realms/flutter/protocol/openid-connect/logout',
+    authorizationEndpoint: 'https://10.0.2.2:8443/realms/flutter/protocol/openid-connect/auth',
+    tokenEndpoint: 'https://10.0.2.2:8443/realms/flutter/protocol/openid-connect/token',
+    endSessionEndpoint: 'https://10.0.2.2:8443/realms/flutter/protocol/openid-connect/logout',
   );
   
 
